@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  retailstore-app-container:
+    image: retailstrore:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
